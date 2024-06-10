@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "infotrie"
+version = "0.1.0"
+description = ""
+authors = ["lee-jangwon <leejangwon1995@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.0.0"
+pydantic = "^2.7.3"
+google-cloud-bigquery = "^3.24.0"
+python-dotenv = "^1.0.1"
+google-cloud-storage = "^2.16.0"
+tqdm = "^4.66.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+isort = {extras = ["jupyter"], version = "^5.13.2"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
